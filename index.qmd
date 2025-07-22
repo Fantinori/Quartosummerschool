@@ -13,8 +13,8 @@ lang: eng
 bibliography: Referencec.bib
 ---
 
-## Quarto
+## About me 
 
-[@rosse1992vangelo]
+I used to work with Jesus once upon a time, and we wrote a paper together. @rosse1992vangelo
 
 ![It's nice to meet you](Img/Image1.jpg)
