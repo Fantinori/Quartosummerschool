@@ -17,7 +17,7 @@ bibliography: Reference.bib
 
 ## About me 
 
-I used to work with Jesus once upon a time, and we wrote a paper together. @rosse1992vangelo
+Ciao a tutti, mi chiamo Luca e sono uno scrittore. Tra i miei lavori più rilevanti riporto questo progetto a cui ho lavorato duramente durante i miei anni di formazione. In particolare, ho collaborato per anni con Gesù di Nazareth, con il quale ho scritto alcuni dei lavori di cui vado più fiero. @rosse1992vangelo
 
 ![It's nice to meet you](Img/Image1.jpg)
 
