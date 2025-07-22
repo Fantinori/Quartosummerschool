@@ -10,8 +10,11 @@ format:
     toc-title: My contents   
     toc-location: left       
 lang: eng
+bibliography: Referencec.bib
 ---
 
 ## Quarto
+
+[@rosse1992vangelo]
 
 ![It's nice to meet you](Img/Image1.jpg)
