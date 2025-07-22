@@ -11,8 +11,8 @@ format:
     toc: true                
     toc-title: My contents   
     toc-location: left       
-lang: eng
-bibliography: Referencec.bib
+lang: it
+bibliography: Reference.bib
 ---
 
 ## About me 
@@ -25,9 +25,11 @@ I used to work with Jesus once upon a time, and we wrote a paper together. @ross
 
 ::: {.callout-warning collapse="true"}
 
-## Look at me!!
+### Soft skills
 
-Suprise suprise, nothing inside :D
+So lavorare bene in team ma, ad onor del vero, ho avuto scazzi con alcuni colleghi. Questa è una foto della cena con i ragazzi con cui lavoravo, prima che uno di noi prendesse scelte a mio dire discutibili
+
+![Questa è una foto della cena con i ragazzi con cui lavoravo, prima che uno di noi prendesse scelte a mio dire discutibili](Img/Image2.jpg)
 
 
 :::
