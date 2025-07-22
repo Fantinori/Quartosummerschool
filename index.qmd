@@ -1,10 +1,12 @@
 ---
-title: "ARCA QUARTO "
+title: "Il Vangelo secondo Quarto"
 author: "Francesca Antinori"
 date: today
 format: 
   html:
-    theme: superhero
+    theme: cosmo
+    fontsize: 1.1em
+    linestretch: 1.7
     self-contained: true  
     toc: true                
     toc-title: My contents   
@@ -21,12 +23,15 @@ I used to work with Jesus once upon a time, and we wrote a paper together. @ross
 
 ### Pros and cons 
 
-
 ::: {.callout-warning collapse="true"}
 
 ## Look at me!!
 
 Suprise suprise, nothing inside :D
 
+
 :::
+
+
+
 
