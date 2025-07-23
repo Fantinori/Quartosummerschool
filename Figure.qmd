@@ -1,0 +1,21 @@
+---
+title: "Figure"
+format: html
+---
+
+## Running Code
+
+```{r}
+library(ggplot2)
+#| echo: false
+
+#| out-width: 50%                                
+#| fig-align: center                             
+#| fig-cap: A graph from `csv I don't know db`
+#| fig-cap-location: margin
+#| label: fig-fiq1
+
+ggplot(dataset, 
+       aes(x = flexibility, y = anxiety, color = mindfulness)) +
+  geom_point()
+```

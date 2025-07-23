@@ -35,21 +35,44 @@ So lavorare bene in team ma, ad onor del vero, ho avuto scazzi con alcuni colleg
 
 :::
 
-```{r echo: TRUE}
-load("/Users/francescaantinori/Desktop/ARCA SUMMER SCHOOL/4th week/Quartosummerschool/DATA/brfss_2011.RData")
+```{r}
+#| echo: true
 
-head(brfss_11)
+library(readr)
+dataset <- read_csv("DATA/dataset.csv")
+head(dataset)
 
-```
-
-```{r, echo: FALSE}
-
-str(brfss_11)
 
 ```
 
-```{r, echo: fenced }
-
-summary(brfss_11)
+```{r}
+#| echo: FALSE
+str(dataset)
 
 ```
+
+```{r}
+#| echo: fenced
+head(dataset)
+
+```
+
+```{r}
+#| echo: false
+#| out-width: 50%
+#| fig-align: center
+#| fig-cap: My Plot2
+#| fig-cap-location: bottom
+#| label: fig-Plot2
+#| code-line-numbers: "|4-6|"
+knitr::include_graphics("img/Plot2.png")
+```
+
+
+
+
+
+### cross reference 1th attempt 
+
+qui trovi il grafico sopra @fig-Plot2
+
