@@ -11,8 +11,9 @@ format:
     toc: true                
     toc-title: My contents   
     toc-location: left       
-lang: it
+lang: en
 bibliography: Reference.bib
+
 ---
 
 ## About me 
@@ -29,11 +30,26 @@ Ciao a tutti, mi chiamo Luca e sono uno scrittore. Tra i miei lavori più rileva
 
 So lavorare bene in team ma, ad onor del vero, ho avuto scazzi con alcuni colleghi. Questa è una foto della cena con i ragazzi con cui lavoravo, prima che uno di noi prendesse scelte a mio dire discutibili
 
-![Questa è una foto della cena con i ragazzi con cui lavoravo, prima che uno di noi prendesse scelte a mio dire discutibili](Img/Image2.jpg)
+![Questa è una foto della cena con i ragazzi con cui lavoravo, prima che uno di noi prendesse scelte a mio dire discutibili](Img/Image2.jpeg)
 
 
 :::
 
+```{r echo: TRUE}
+load("/Users/francescaantinori/Desktop/ARCA SUMMER SCHOOL/4th week/Quartosummerschool/DATA/brfss_2011.RData")
 
+head(brfss_11)
 
+```
 
+```{r, echo: FALSE}
+
+str(brfss_11)
+
+```
+
+```{r, echo: fenced }
+
+summary(brfss_11)
+
+```
