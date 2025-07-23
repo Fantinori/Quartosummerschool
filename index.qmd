@@ -65,6 +65,7 @@ head(dataset)
 #| fig-cap-location: bottom
 #| label: fig-Plot2
 #| code-line-numbers: "|4-6|"
+
 knitr::include_graphics("img/Plot2.png")
 ```
 
@@ -75,4 +76,16 @@ knitr::include_graphics("img/Plot2.png")
 ### cross reference 1th attempt 
 
 qui trovi il grafico sopra @fig-Plot2
+
+
+# Linear Model 
+
+This is a linear model 
+
+$$y = \beta_0 + \beta_1 z + \varepsilon$$
+```{r}
+#| echo: true
+#| column: margin
+#| 
+```
 
