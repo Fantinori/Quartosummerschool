@@ -13,8 +13,21 @@ format:
     toc-location: left       
 lang: en
 bibliography: Reference.bib
+warning: false
+code-annotations: hover
 
 ---
+
+```{r}
+#|include: false
+#|echo: false
+
+library(ggplot2)
+library(knitr)
+library(readr)
+library(DT)
+```
+
 
 ## About me 
 
@@ -38,7 +51,6 @@ So lavorare bene in team ma, ad onor del vero, ho avuto scazzi con alcuni colleg
 ```{r}
 #| echo: true
 
-library(readr)
 dataset <- read_csv("DATA/dataset.csv")
 head(dataset)
 
@@ -66,9 +78,19 @@ head(dataset)
 #| label: fig-Plot2
 #| code-line-numbers: "|4-6|"
 
+
 knitr::include_graphics("img/Plot2.png")
 ```
 
+
+```{r}
+#| echo: false
+#| label: tbl-mtcars
+
+library(DT)
+datatable(mtcars)
+
+```
 
 
 
@@ -86,6 +108,89 @@ $$y = \beta_0 + \beta_1 z + \varepsilon$$
 ```{r}
 #| echo: true
 #| column: margin
-#| 
+
+lm(hp ~ mpg*am, data = mtcars)
+
+```
+```{r}
+#| echo: false
+#| eval: false
+#| fig-column: margin
+
+
+ggplot(mtcars, 
+       aes(hp, mpg, color = factor(am))) +
+  geom_point() +
+  geom_smooth(formula = y ~ x, method = "loess") +
+  theme(legend.position = 'bottom')
+
+datatable(mtcars,
+  options = list(pageLength = 5))
+
+```
+```{r}
+#| label: fig-plotsModels
+#| column: screen-inset-shaded
+#| layout-nrow: 2
+#| layout-ncol: 2
+#| fig-cap: "One dataset, different models" 
+#| fig-subcap:
+#|   - "The data"
+#|   - "Polynomial"
+#|   - "Linear Model"
+#|   - "GLM with Poisson" 
+
+
+ggplot(mtcars,
+       aes(mpg, hp, size = gear)) +
+  geom_point()
+
+ggplot(mtcars,
+       aes(mpg, hp, size = gear)) +
+  geom_point() + 
+  geom_smooth()
+
+ggplot(mtcars,
+       aes(mpg, hp, size = gear)) +
+  geom_point() + 
+  geom_smooth(method = "lm")
+ggplot(mtcars,
+       aes(mpg, hp, size = gear)) +
+  geom_point() + 
+  geom_smooth(method = "glm", method.args = list(family = "poisson"))
+
+
 ```
 
+
+```{r}
+#| label: tbl-tables
+#| tbl-cap: "Datasets"
+#| tbl-subcap: 
+#|   - "Cars"
+#|   - "Pressure"
+#| layout-ncol: 2
+
+kable(head(cars))
+
+kable(head(pressure))
+```
+```{r}
+#| echo: true
+#| eval: true
+
+mtcars %>%                               # <1>
+  ggplot( aes(mpg, hp, size = gear)) +   # <2>
+  geom_point() +                         # <3>    
+  geom_smooth(method = "lm")             # <4>
+```
+1. This does that
+
+2. This other thing is this
+
+3. And look at this!
+
+4. Please have mercy
+
+
+this is the last thing with `r min(mtcars$gear)`
