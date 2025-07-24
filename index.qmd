@@ -18,13 +18,16 @@ code-annotations: hover
 ---
 
 ```{r}
-#|include: false
-#|echo: false
+#| include: false
+#| echo: false
+#| eval: true
 
 library(ggplot2)
 library(knitr)
 library(readr)
 library(DT)
+
+dataset <- read_csv("DATA/dataset.csv")
 ```
 
 
@@ -54,7 +57,6 @@ So lavorare bene in team ma, ad onor del vero, ho avuto scazzi con alcuni colleg
 ```{r}
 #| echo: true
 
-dataset <- read_csv("DATA/dataset.csv")
 head(dataset)
 
 

@@ -1,30 +1,57 @@
 ---
-title: "QuartoPresentation"
+title: "My CV"
 author: "Francesca Antinori"
 format:
-       revealjs:
-         self-contained: true 
+    revealjs:
+      self-contained: true 
+      incremental: true
+      theme: [solarized, PresentationCustom.scss]
+      slide-number: c/t
+      show-slide-number: all
 ---
 
-## Intro
+
+## Intro {style="text-align:center;"}
 
 Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
 
-## Code
+## The Office 
 
-When you click the **Render** button a document will be generated that includes:
+:::{.r-stack}
+::: {.fragment .fade-in-then-out}
+![Giulia, the HR](Img/Dog1.jpg){width="350" height="300"}
 
--   Content authored with markdown
--   Output from executable code
+:::
 
-## Presentation Section
+::: {.fragment .fade-in-then-out}
+![Giorgio, the IT guy](Img/Dog2.jpg){width="350" height="350"}
+
+:::
+
+
+::: {.fragment .fade-in-then-out}
+![Mariano, the colleague who has been waiting to retire since 1974](Img/Dog4.jpg){width="350" height="300"}
+
+:::
+:::
+
+## Code highlight
 
 [Here]( .....)
 
 When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
 
 ```{r}
-1 + 1
+#| eval: true
+#| echo: true
+#| output-location: fragment
+#| fig-align: center
+#| code-line-numbers: "|1-2|3|4-6|"
+
+library(ggplot2)
+ggplot(mtcars,
+       aes(mpg, hp, size = gear)) +
+  geom_point()
 ```
 
 
