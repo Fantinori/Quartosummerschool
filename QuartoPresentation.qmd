@@ -1,7 +1,9 @@
 ---
 title: "QuartoPresentation"
 author: "Francesca Antinori"
-format: revealjs
+format:
+       revealjs:
+         self-contained: true 
 ---
 
 ## Intro
@@ -15,7 +17,9 @@ When you click the **Render** button a document will be generated that includes:
 -   Content authored with markdown
 -   Output from executable code
 
-## Code
+## Presentation Section
+
+[Here]( .....)
 
 When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
 
