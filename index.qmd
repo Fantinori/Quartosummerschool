@@ -15,6 +15,7 @@ lang: en
 bibliography: Reference.bib
 warning: false
 code-annotations: hover
+
 ---
 
 ```{r}
@@ -39,7 +40,7 @@ Ciao a tutti, mi chiamo Luca e sono uno scrittore. Tra i miei lavori più rileva
 
 
 [Here](QuartoPresentation.html) you can find here my presentation
-
+I also have a [PDF](PDF.html) presentation.
 
 ### Pros and cons 
 
